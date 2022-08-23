@@ -1,0 +1,13 @@
+.divCard{
+    border: solid 2px blue;
+    padding: 1em;
+    margin: 1em;
+   max-width: 50%;
+}
+.imgCard{
+   width: 50%;
+}
+
+.btnout{
+margin-right: 2em;
+}

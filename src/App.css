@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* h1, h2{
+margin: 2em;
+
+}
+
+h1{
+  background: blue;
+  margin-top: 3em;
+}
+
+h2{
+  background: green;
+} */
+
+
+.divNF h1{
+  color: violet;
+    font-size: 300%;
+     text-align: center;
+
+}
+.divNF{
+  padding-top:5em;
+  background: black;
+    padding-bottom: 75%;
+
+}
+.divLoginRouter{
+      padding: 5em;
+  background: orange;
+    padding-bottom: 100%;
+  justify-content: center;
+
+
+}
+
+.divInicio  {
+    padding: 5em;
+  background: lightblue;
+  padding-bottom: 100%;
+  padding-top: 5em;
+
+}
+
+.divBox{
+  border: solid 2px black;
+    padding:0.5em;
+  width: 30em;
+  max-width: 30em;
+   height: 23em;
+  max-height: 23em;
+ border-radius: 30px;
+ 
+}
+.divFormLayout{
+  color: red;
+      /* display: flex; */
+      padding-bottom: 3em;
+  justify-content: center;
+
+ 
+}
+.h2Form{
+  color: blue;
+  
+     display: flex;
+  justify-content: center;
+
+  }
+ .inputForm::placeholder {
+  color: blue;
+  font-size: larger;
+
+ }
+.inputForm{
+  background: #F7B1AB;
+  color: yellow;
+ border-radius: 20px;
+padding-left: 0.3em;
+margin-top:1em;
+
+}
+
+.linkFormulario{
+  float: right;
+  margin:1em;
+  margin-top: 4em;
+}  
+.buttonSecondPage{
+    display: flex;
+     position: relative;
+     margin-top:1em;
+    left: 25%;
+    transform: translate(-50%, -25%);
+
+}
+
+.divDisplayLista{
+  border: solid 2px blue;
+  padding: 0.5em;
+  margin: 0.5em;
+  max-width: 40em;
+  
+}
+.divCentrarElemento{
+
+     display: flex;
+  justify-content: center;
+}
+
+.divAñadirContenido{
+  border: solid 2px black;
+  width: 18em;
+  height: 15em;
+  margin: 1em;
+  padding: 1em;
+}
