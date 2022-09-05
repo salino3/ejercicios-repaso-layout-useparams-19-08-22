@@ -11,8 +11,9 @@ const Form = () => {
     const email = event.target.Email.value;
     const password = event.target.Password.value;
     const mix = [first, email, password];
-    console.log(`datos utente Formulari Login: ${first} ${email} ${password}`);
+    console.log(`datos utente Formulario Login: ${first} ${email} ${password}`);
     console.log(mix);
+    alert("Usuario logueado!")
   };
 
   return (
@@ -57,12 +58,14 @@ const Form = () => {
               name={"Password"}
             />
             <br />
+            <div className='divAbajoLogin'>
             <button className=" m-2 btn btn-primary rounded-pill p-3 mt-5">
               click
             </button>
             <Link className="linkFormulario" to={"/login/createAccount"}>
               ¿Todavía no tienes un perfil?
             </Link>
+            </div>
           </form>
         </FormBox>
       </div>

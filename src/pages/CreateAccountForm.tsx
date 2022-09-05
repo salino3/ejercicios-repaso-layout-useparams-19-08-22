@@ -12,6 +12,7 @@ interface User {
   name: string;
   email: string;
   password: string;
+  
 }
 //
 
@@ -42,22 +43,14 @@ const CreateAccountForm = () => {
        },
      },
    },
-   onSubmit: () => {alert("User submitted!")
+   onSubmit: () => {alert("Usuario registrado!")
   console.log(`datos utente Formulario Create Account: ${user.name} - ${user.email} `);
   // setData((prev) => ({ ...prev, [user.name]: user.name }));
 }
  });
 //*
 
-//  const HandleSubmit = (event: any) => {
-//    event.preventDefault();
-//    const first = event.target.name.value;
-//    const email = event.target.email.value;
-//    const password = event.target.password.value;
-//    const mix = [first, email, password];
-//    console.log(`datos utente Formulario Create Account: ${first} ${email} ${password}`);
-//    console.log(mix);
-//  };
+
 
 
 
@@ -67,16 +60,17 @@ const CreateAccountForm = () => {
         <FormBox className={"divFormLayout"} textoH2={"Crea tu perfil"}>
           <form onSubmit={handleSubmit}>
             <br />
+            <div className="divArriba">
             <Input
               pl={"Escribe tu nombre.."}
               className={"inputForm"}
               type={"text"}
               name={"name"}
-              value={user.name }
+              value={user.name}
               onCh={handleChange("name")}
             />{" "}
             <i className="bi bi-person"></i>
-            {errors.name && <p className="error">{errors.name}</p>}
+            {errors.name && <p className="">{errors.name}</p>}
             <br />
             <Input
               pl={"Escribe tu Email.."}
@@ -84,7 +78,7 @@ const CreateAccountForm = () => {
               type={"email"}
               name={"email"}
               autoComplete={"username"}
-              value={user.email }
+              value={user.email}
               onCh={handleChange("email")}
             />{" "}
             <i className="bi bi-envelope-paper"></i>
@@ -95,21 +89,23 @@ const CreateAccountForm = () => {
               type={"password"}
               name={"password"}
               autoComplete={"current-password"}
-              value={user.password }
+              value={user.password}
               onCh={handleChange("password")}
             />{" "}
             <i className="bi bi-key"></i>
-            {errors.password && <p className="error">{errors.password}</p>}
+            {errors.password && <p className="">{errors.password}</p>}
             <br />
-            <button
-              // onClick={HandleSubmit}
-              className=" m-2 btn btn-primary rounded-pill p-3 mt-5"
-            >
-              click
-            </button>
-            <Link className="linkFormulario" to={"/login/form"}>
-              ¿Ya tienes un perfil?
-            </Link>
+            </div>
+            <div className="divAbajo">
+              <button
+                className=" btn btn-primary rounded-pill p-3 mt-5"
+              >
+                click
+              </button>
+              <Link className="linkFormulario" to={"/login/form"}>
+                ¿Ya tienes un perfil?
+              </Link>
+            </div>
           </form>
         </FormBox>
       </div>
