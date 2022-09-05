@@ -11,9 +11,11 @@ interface Props {
   onCl?: React.MouseEventHandler<HTMLInputElement> | undefined;
   onCh?: React.ChangeEventHandler<HTMLInputElement> | undefined;
   pl?: string | undefined;
+  autoComplete?: string | undefined;
+  value?: string | number | readonly string[] | undefined;
 }
 
-const Input = ({lbl, className, type, name, id, title, onCl, onCh, pl}: Props) => {
+const Input = ({lbl, className, type, name, id, title, onCl, onCh, pl, autoComplete, value}: Props) => {
   return (
     <>
       <label> {lbl}</label> &nbsp;
@@ -26,6 +28,9 @@ const Input = ({lbl, className, type, name, id, title, onCl, onCh, pl}: Props) =
         onClick={onCl}
         onChange={onCh}
         placeholder={pl}
+        autoComplete={autoComplete}
+        required
+        value={value}
       />
     </>
   );

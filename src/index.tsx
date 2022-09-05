@@ -5,6 +5,9 @@ import App from './App';
 // npm i react-router-dom
 import { BrowserRouter } from 'react-router-dom';
 // npm i bootstrap-icons
+// npm install react-hook-form
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

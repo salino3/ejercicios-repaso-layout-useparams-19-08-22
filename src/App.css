@@ -86,10 +86,10 @@ h2{
 .divBox{
   border: solid 2px black;
     padding:0.5em;
-  width: 30em;
-  max-width: 30em;
-   height: 23em;
-  max-height: 23em;
+  width: 35em;
+  max-width: 35em;
+   height: 30em;
+  /* max-height: 23em; */
  border-radius: 30px;
  
 }
