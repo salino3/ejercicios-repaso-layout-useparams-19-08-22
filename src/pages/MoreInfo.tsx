@@ -9,7 +9,7 @@ const MoreInfo = () => {
     <>
       <NavBar />
 {/* más informaciones (coches y motos) desde lista completa */}
-      <div>
+      <div className='p-3'>
         <h1>Informaciones del vehículo</h1>
         <p>
           Propritario/a: <span style={{ color: "red" }}> {proprietario} </span>

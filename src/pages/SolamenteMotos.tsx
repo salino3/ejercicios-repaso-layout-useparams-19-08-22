@@ -8,6 +8,7 @@ const SolamenteMotos = ({ variable }: any) => {
 
   return (
     <>
+    
       {/* mostrando la lista de motos(ruta desde 'NavBar') */}
       <NavBar />
       <h1>Solamente Motos</h1>

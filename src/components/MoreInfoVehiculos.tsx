@@ -15,9 +15,9 @@ const MoreInfoVehiculos = () => {
   return (
     <>
       <NavBar />
-      <h1>Informaciones del vehículo</h1>
+      <h1 className="px-3">Informaciones del vehículo</h1>
 
-      <div>
+      <div className="p-3">
         <p>
           Propritario/a:{" "}
           <span style={{ color: "red" }}> {item.proprietario} </span>
