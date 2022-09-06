@@ -13,9 +13,23 @@ interface Props {
   pl?: string | undefined;
   autoComplete?: string | undefined;
   value?: string | number | readonly string[] | undefined;
+  defaultValue?: any;
 }
 
-const Input = ({lbl, className, type, name, id, title, onCl, onCh, pl, autoComplete, value}: Props) => {
+const Input = ({
+  lbl,
+  className,
+  type,
+  name,
+  id,
+  title,
+  onCl,
+  onCh,
+  pl,
+  autoComplete,
+  value,
+  defaultValue,
+}: Props) => {
   return (
     <>
       <label> {lbl}</label> &nbsp;
@@ -31,9 +45,10 @@ const Input = ({lbl, className, type, name, id, title, onCl, onCh, pl, autoCompl
         autoComplete={autoComplete}
         required
         value={value}
+        defaultValue={defaultValue}
       />
     </>
   );
-}
+};
 
 export default Input

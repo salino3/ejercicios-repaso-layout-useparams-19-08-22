@@ -47,6 +47,7 @@ const Form = () => {
               className={"inputForm"}
               type={"email"}
               name={"Email"}
+              autoComplete={"username"}
             />{" "}
             <br />
             <label>Password: &nbsp;</label>
@@ -56,15 +57,16 @@ const Form = () => {
               className={"inputForm"}
               type={"password"}
               name={"Password"}
+              autoComplete={"current-password"}
             />
             <br />
-            <div className='divAbajoLogin'>
-            <button className=" m-2 btn btn-primary rounded-pill p-3 mt-5">
-              click
-            </button>
-            <Link className="linkFormulario" to={"/login/createAccount"}>
-              ¿Todavía no tienes un perfil?
-            </Link>
+            <div className="divAbajoLogin">
+              <button className=" m-2 btn btn-primary rounded-pill p-3 mt-5">
+                click
+              </button>
+              <Link className="linkFormulario" to={"/login/createAccount"}>
+                ¿Todavía no tienes un perfil?
+              </Link>
             </div>
           </form>
         </FormBox>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import FormBox from '../layout/FormBox';
 import Input from '../layout/Input';
@@ -19,6 +19,7 @@ interface User {
 
 
 const CreateAccountForm = () => {
+
 //*
  const {
    handleSubmit,
@@ -27,6 +28,8 @@ const CreateAccountForm = () => {
    setData,
    errors,
  } = useForm<User>({
+
+  
    validations: {
      name: {
        pattern: {
@@ -43,6 +46,7 @@ const CreateAccountForm = () => {
        },
      },
    },
+   
    onSubmit: () => {alert("Usuario registrado!")
   console.log(`datos utente Formulario Create Account: ${user.name} - ${user.email} `);
   // setData((prev) => ({ ...prev, [user.name]: user.name }));
@@ -66,7 +70,7 @@ const CreateAccountForm = () => {
               className={"inputForm"}
               type={"text"}
               name={"name"}
-              value={user.name}
+              //  value={user.name}
               onCh={handleChange("name")}
             />{" "}
             <i className="bi bi-person"></i>
@@ -78,7 +82,7 @@ const CreateAccountForm = () => {
               type={"email"}
               name={"email"}
               autoComplete={"username"}
-              value={user.email}
+              // value={user.email}
               onCh={handleChange("email")}
             />{" "}
             <i className="bi bi-envelope-paper"></i>
@@ -89,7 +93,7 @@ const CreateAccountForm = () => {
               type={"password"}
               name={"password"}
               autoComplete={"current-password"}
-              value={user.password}
+             // value={user.password}
               onCh={handleChange("password")}
             />{" "}
             <i className="bi bi-key"></i>
