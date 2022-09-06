@@ -11,8 +11,13 @@ const Inicio = () => {
         <Link to="login">
           <button className="btn btn-primary rounded ">Entrar</button>
         </Link>
-        <div>
-          <h1 className="divAñadirContenido">Añadir contenido y fotos</h1>
+        <div className="divAñadirContenido">
+          <h1 className='H1contenido'>Añadir contenido y fotos</h1>
+          <img
+            className="fotoVehiculos"
+            src="fotosRellenosWeb/vehiculos.jpg"
+            alt="imagen"
+          />
         </div>
       </div>
     </>

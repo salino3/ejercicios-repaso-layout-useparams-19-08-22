@@ -78,7 +78,7 @@ h2{
 .divInicio  {
     padding: 5em;
   background: lightblue;
-  padding-bottom: 100%;
+  padding-bottom: 70%;
   padding-top: 5em;
 
 }
@@ -151,8 +151,8 @@ margin-top:1em;
 
 .divAñadirContenido{
   border: solid 2px black;
-  width: 18em;
-  height: 15em;
+  width: 54em;
+  height: 40em;
   margin: 1em;
   padding: 1em;
 }
@@ -185,3 +185,13 @@ margin-top:1em;
     padding: 1em;
     
   }
+
+.fotoVehiculos{
+  
+padding: 0.5em;
+width: 50em;
+}
+.H1contenido{
+    white-space: nowrap;
+}
+

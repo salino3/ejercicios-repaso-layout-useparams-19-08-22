@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 const SecondPage = () => {
   return (
     <>
-      <div className="p-2">
+      <div className="  p-2">
         <h2>Segunda Página</h2>
 
         <Link to="form">
@@ -23,8 +23,13 @@ const SecondPage = () => {
         </Link>
       </div>
       <Outlet />
-      <div>
-        <h1 className='divAñadirContenido'>Añadir contenido y fotos</h1>
+      <div className="divAñadirContenido">
+        <h1 className="H1contenido">Añadir contenido y fotos</h1>
+        <img
+          className="fotoVehiculos"
+          src="fotosRellenosWeb/imgMaserati.jpg"
+          alt="imagen"
+        />
       </div>
     </>
   );
