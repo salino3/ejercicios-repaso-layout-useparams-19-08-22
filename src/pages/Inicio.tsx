@@ -6,7 +6,7 @@ const Inicio = () => {
   return (
     <>
       <div className="divInicio">
-        <p>Inicio</p>
+        <h2>Inicio</h2>
 
         <Link to="login">
           <button className="btn btn-primary rounded ">Entrar</button>

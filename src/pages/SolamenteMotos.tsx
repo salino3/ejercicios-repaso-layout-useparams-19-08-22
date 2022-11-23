@@ -8,10 +8,9 @@ const SolamenteMotos = ({ variable }: any) => {
 
   return (
     <>
-    
       {/* mostrando la lista de motos(ruta desde 'NavBar') */}
       <NavBar />
-      <h1>Solamente Motos</h1>
+      <h1 className="px-2">Solamente Motos</h1>
       {myTipo &&
         myTipo.map((item: any) => <Card key={item.id} {...item} />)}{" "}
     </>
